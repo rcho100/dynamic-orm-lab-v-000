@@ -60,7 +60,6 @@ class InteractiveRecord
   end
 
   def self.find_by(attribute_hash)
-    binding.pry
     attribute = attribute_hash.keys[0].to_s
     attribute_value = attribute_hash.values[0].class == Fixnum ? attribute_hash.values[0] : attribute_hash.values[0].to_s
 
